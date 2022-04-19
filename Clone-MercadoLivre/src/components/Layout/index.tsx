@@ -6,9 +6,9 @@ import { Container, Wrapper } from "./styles";
 
 const Layout: React.FC = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Product />
+    <Container> //aqui é o tamanho da pagína
+      <Wrapper> //aqui é o conteudo de dentro 
+        <Product />// aqui será o produto
       </Wrapper>
     </Container>
   );

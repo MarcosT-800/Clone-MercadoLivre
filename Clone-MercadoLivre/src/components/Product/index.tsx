@@ -4,6 +4,7 @@ import tshirtImage from "../../assets/tshirt.png";
 import ProductAction from "../ProductAction";
 import SellerInfo from "../SellerInfo";
 
+//importando o que irmeos usar
 import {
   Container,
   Row,
@@ -14,24 +15,26 @@ import {
   Description,
 } from "./styles";
 
+//Aqui ficará o Grid que iremos construir 
+
 const Product: React.FC = () => {
   return (
     <Container>
-      <Row>
+      <Row> //Row significa linha aqui então iremos criar uma linha que terá 2 Href
         <a href="#">Compartilhar</a>
         <a href="#">Vender um igual</a>
       </Row>
 
-      <Panel>
-        <Column>
-          <Gallery>
-            <img alt="T-Shirt" src={tshirtImage} />
+      <Panel> // será todo o painel branco que fica atrás o fundo
+        <Column> //coluna da esquerda
+          <Gallery> //galeria de foto do produto
+            <img alt="T-Shirt" src={tshirtImage} /> //imagem do produto
           </Gallery>
 
-          <Info />
+          <Info />//criando info que conterá as informações do produto lá em baixo
         </Column>
 
-        <Column>
+        <Column> // colouna da direita
           <ProductAction />
           <SellerInfo />
 
@@ -44,12 +47,13 @@ const Product: React.FC = () => {
   );
 };
 
+//sessão de garantia
 const WarrantySection = () => (
   <Section>
     <h4>Garantia</h4>
 
     <div>
-      <span>
+      <span>//será o texto da garantia
         <p className="title">Compra Garantida com o Lorem Ipsum</p>
         <p className="description">
           Receba o produto que está esperando ou devolvemos seu dinheiro
@@ -65,8 +69,9 @@ const WarrantySection = () => (
   </Section>
 );
 
+//componente que criamos acima
 const Info = () => (
-  <Description>
+  <Description> //descrição do produto
     <h2>Descrição</h2>
 
     <p>

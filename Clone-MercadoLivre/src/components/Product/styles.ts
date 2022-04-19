@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; //joga os itens lá pro final
   align-items: center;
   padding: 16px 0;
 
@@ -17,20 +17,21 @@ export const Row = styled.div`
     color: var(--color-blue);
     padding: 2.5px 0;
 
-    & + a {
-      padding-left: 10px;
-      margin-left: 10px;
+    & + a { // Segundo href apenas
+      padding-left: 10px; //espaçamento para esqueda
+      margin-left: 10px; 
       border-left: 1px solid var(--color-border);
     }
   }
 `;
 
+//painel 
 export const Panel = styled.div`
-  background: var(--color-white);
-  box-shadow: var(--panel-shadow);
+  background: var(--color-white);//terá cor  de fundo branco
+  box-shadow: var(--panel-shadow); // box shadow que fica em volta do painel 
 
   display: grid;
-  grid-template-columns: 65fr 35fr;
+  grid-template-columns: 65fr 35fr; //tamanho das colunas 
 `;
 
 export const Column = styled.div`
@@ -39,11 +40,12 @@ export const Column = styled.div`
   }
 `;
 
+//camiseta
 export const Gallery = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 530px;
+  align-items: center; //centralizando 
+  justify-content: center; //centralizando
+  height: 530px; //altura da imagem
 
   > img {
     height: 73%;
@@ -88,6 +90,7 @@ export const Section = styled.div`
   }
 `;
 
+//descrição
 export const Description = styled.div`
   border-top: 1px solid var(--color-border);
   padding: 44px 32px;

@@ -1,5 +1,5 @@
 import React from "react";
-
+// o selerinfo é onde ficará as informações do vendedor 
 import {
   Container,
   Title,
@@ -27,13 +27,13 @@ const SellerInfo: React.FC = () => {
         </div>
       </LocationCard>
 
-      <ReputationCard>
-        <ReputationThermometer>
+      <ReputationCard> //reputação do mercado livre 
+        <ReputationThermometer> //termometro
           <li />
           <li />
           <li />
           <li />
-          <li className="active" />
+          <li className="active" /> //o ultimo nivel de reputação estará ativo
         </ReputationThermometer>
 
         <ReputationRow>

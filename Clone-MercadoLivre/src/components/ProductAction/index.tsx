@@ -1,5 +1,5 @@
 import React from "react";
-
+// toda parte que mostra o pagamento os botões e o valor do produto
 import {
   Container,
   Condition,

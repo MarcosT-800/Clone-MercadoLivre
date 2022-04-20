@@ -34,7 +34,7 @@ export const HeartIcon = styled(HiOutlineHeart)`
   color: var(--color-blue);
   margin-left: 16px;
 
-  cursor: pointer;
+  cursor: pointer; //para quando passar o mouse no icone
 `;
 
 export const DispatchTag = styled.div`
@@ -131,6 +131,7 @@ export const Button = styled.button<ButtonProps>`
   padding: 12px 10px;
   margin-top: 10px;
 
+//se o botão não for solid ele terá tal aparencia e se não for terá um outra aparencia
   color: ${(props) =>
     props.solid ? "var(--color-white)" : "var(--color-blue)"};
   background: ${(props) => (props.solid ? "var(--color-blue)" : "transparent")};

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+// importando icones do site react-icons
 import {
   HiOutlineLocationMarker,
   HiOutlineChatAlt2,
@@ -19,12 +20,12 @@ export const Title = styled.div`
 `;
 
 export const LocationCard = styled.div`
-  display: flex;
+  display: flex; //centraliziando de forma vertical
   align-items: center;
   padding: 7px 0;
 
   > div {
-    margin-left: 8px;
+    margin-left: 8px; //separa o texto
 
     > p {
       font-size: 16px;
@@ -36,14 +37,14 @@ export const LocationCard = styled.div`
     }
   }
 `;
-
+//todos os icones terão essas medidas
 const iconCSS = css`
   width: 30px;
   height: 30px;
 `;
 
 export const LocationIcon = styled(HiOutlineLocationMarker)`
-  ${iconCSS}
+  ${iconCSS} //falando que o css dele terá o valor da variavel IconCSS
 `;
 
 export const ReputationCard = styled.div`
@@ -57,8 +58,8 @@ export const ReputationThermometer = styled.ol`
   list-style: none;
 
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: grid; //criando o grid
+  grid-template-columns: repeat(5, 1fr); //criando 5 barras
 
   grid-gap: 7px;
   padding: 0 4px;
@@ -67,6 +68,7 @@ export const ReputationThermometer = styled.ol`
     width: 100%;
     height: 8px;
 
+//cores das barrinhas
     &:nth-child(1) {
       background: var(--reputation-1);
     }
@@ -83,6 +85,7 @@ export const ReputationThermometer = styled.ol`
       background: var(--reputation-5);
     }
 
+//se o item for ative ele terá as configurçãoes abaixo
     &.active {
       height: 12px;
     }
@@ -113,6 +116,7 @@ export const ReputationRow = styled.div`
 
     position: relative;
 
+//separador do vendedor pequenas linhas 
     & + div {
       &::before {
         content: "";
